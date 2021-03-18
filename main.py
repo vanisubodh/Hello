@@ -1,14 +1,6 @@
-def readFile():
+def writeFile():
+  file = open("txt.txt", "a")
 
-  file = open("txt.txt", "r")
-
-  i = 1
-
-  for line in file:
-    print("%d %s" % (i, line), end='')
-    i += 1
-
-  print("")
-
-  file.close()
-readFile()
+  file.write("Take it easy")
+  file.write("open(\"text.txt\")")
+writeFile()
