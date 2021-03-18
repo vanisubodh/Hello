@@ -1,9 +1,11 @@
-#Keyboard input
+def ifStatements():
 
-def keyboardInput():
-  phone = input("Please Enter Your Phone Number: ")
-  print("Your number is %s" % (phone))
+  num = int(input("Enter a number between 1-10: "))
 
-  language = input("Plese Enter Your preferred programming language: ")
-  print("Your prefered programming language is %s" % (language))
+  if(num in range(1, 10)):
+    print("Valid Number")
+  else:
+    print("Invalid Number")
+
+  
 
