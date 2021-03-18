@@ -1,7 +1,14 @@
-def dictionary():
-  countries = {'United States of America' : 'USA', 'Germany' : 'GER', 'France' : 'FRA', 'United Kingdom' : 'UK'}
+def readFile():
 
-  for country in countries:
-    print("%s : %s" % (country, countries[country]))
+  file = open("txt.txt", "r")
 
-dictionary()
+  i = 1
+
+  for line in file:
+    print("%d %s" % (i, line), end='')
+    i += 1
+
+  print("")
+
+  file.close()
+readFile()
