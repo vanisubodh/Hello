@@ -1,13 +1,9 @@
-def nestedLoops():
-  for i in range(1, 4):
-    print("[", end=' ')
-    for j in range (1, 4):
-      print("_", end=' ')
-    print("]")
+def slices():
 
-  persons = ["John", "Marissa", "Pete", "Dayton"]
+  pizzas = ["Hawai","Pepperoni","Fromaggi","Napolitana","Diavoli"]
+  print(pizzas[2:4])
 
-  for person1 in persons:
-    for person2 in persons:
-      print(person1 + " -> " + person2)
-nestedLoops()
+  text = "Hello World"
+
+  print(text[6:])
+slices()
