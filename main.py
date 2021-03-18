@@ -1,19 +1,38 @@
-s = "My lucky number is %d, what is yours?" % 7
-print(s[3:8])
-print("---------------")
+#Printin random numbers in range
 
-s = "The date is %d/%d/%d" % (7, 7, 2016)
-print (s)
-print("---------------")
-s = "Hello world!"
-print(s.replace("world", "Vani"))
-print("---------------")
-words = ["Messi", "is", "the", "best", "soccer", "player"]
-sentence = " ".join(words)
-print(sentence) 
-print(sentence.replace(" ","_"))
-print("---------------")
-str = "this is My house.... this is my hosue"
-#print str.replace("is","was",3)
+import random
 
-#print str.replace("is", "was", 3)
+def randomNumbers():
+  x = random.randint(0, 10)
+
+  print(x)
+
+  print("")
+
+  i = 0
+
+  while(i<3):
+
+    print(random.randint(0, 100))
+
+    i += 1
+
+  i = 0
+
+  print("")
+
+  numberOccurances = {}
+
+  while (i < 100):
+
+    rand = random.randint(0,100)
+
+    if(rand not in numberOccurances):
+      numberOccurances[rand] = 1
+    else:
+      numberOccurances[rand] += 1
+
+    i += 1
+
+  print(numberOccurances)
+randomNumbers()
