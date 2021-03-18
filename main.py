@@ -1,20 +1,19 @@
-print("Vani Hovale")
+s = "My lucky number is %d, what is yours?" % 7
+print(s[3:8])
 print("---------------")
-print(''' ಏನು ಮಾಡೋದು ಮುಂದೆ ಏನು ಮಾಡೋದು ಅಂತ
-ಮಂಕಾಗಿ ಕೊತ್ರೆಂಗೆ
-ಆ ಸವಿಗನಸಿನ ಸಿಹಿ ಪ್ರತಿ ನಿಮಿಷವ ನಿನ್ನ ಕೈಯಾರ ಕೊಂದಂಗೆ
-ಹೇಗೆ ಬಾಳೋದು ಎಲ್ಲ ನೋಡಿ ನಗುತಾರೆ ಅಂತ ಬೇಜಾರಾದ್ರೆಂಗೆ
-ನಿನ್ನ ನಗುವಲ್ಲೇ ಗೆಲ್ಲಬೇಕು ಇಡೀ ಪರಪಂಚವೆ ತಿರುಗಿ ನೋಡಂಗೆ''')
+
+s = "The date is %d/%d/%d" % (7, 7, 2016)
+print (s)
 print("---------------")
-print(1,2,3,4,5)
+s = "Hello world!"
+print(s.replace("world", "Vani"))
 print("---------------")
-x= 64+32
-print(x)
+words = ["Messi", "is", "the", "best", "soccer", "player"]
+sentence = " ".join(words)
+print(sentence) 
+print(sentence.replace(" ","_"))
 print("---------------")
-x=3
-y=5
-z= x+y
-print(z)
-print("---------------")
-name= input("Enter your fav actor ")
-print("Your fav actor is " +name)
+str = "this is My house.... this is my hosue"
+#print str.replace("is","was",3)
+
+#print str.replace("is", "was", 3)
