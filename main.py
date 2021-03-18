@@ -1,8 +1,20 @@
-#number = input("enter the number")
-#print("Your number is:" + number)
-
-print("----------------")
-
-lang= input("Python or Ruby?:")
-print("Your chose:"+lang)
-
+print("Vani Hovale")
+print("---------------")
+print(''' ಏನು ಮಾಡೋದು ಮುಂದೆ ಏನು ಮಾಡೋದು ಅಂತ
+ಮಂಕಾಗಿ ಕೊತ್ರೆಂಗೆ
+ಆ ಸವಿಗನಸಿನ ಸಿಹಿ ಪ್ರತಿ ನಿಮಿಷವ ನಿನ್ನ ಕೈಯಾರ ಕೊಂದಂಗೆ
+ಹೇಗೆ ಬಾಳೋದು ಎಲ್ಲ ನೋಡಿ ನಗುತಾರೆ ಅಂತ ಬೇಜಾರಾದ್ರೆಂಗೆ
+ನಿನ್ನ ನಗುವಲ್ಲೇ ಗೆಲ್ಲಬೇಕು ಇಡೀ ಪರಪಂಚವೆ ತಿರುಗಿ ನೋಡಂಗೆ''')
+print("---------------")
+print(1,2,3,4,5)
+print("---------------")
+x= 64+32
+print(x)
+print("---------------")
+x=3
+y=5
+z= x+y
+print(z)
+print("---------------")
+name= input("Enter your fav actor ")
+print("Your fav actor is " +name)
