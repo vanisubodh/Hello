@@ -1,18 +1,22 @@
-def whileLoops():
-  clist = ["Canada","USA","Mexico"]
-  i = 0
-
-  while(i < len(clist)):
-    print(clist[i], end=' ')
-    i += 1
-
-  print("")
-
-  i = 1
+def functions(mylist):
   summation = 0
-
-  while(i in range(1,11)):
-    summation += i
-    i += 1
+  for num in mylist:
+    summation += num
   print(summation)
-whileLoops()
+
+def recursionFactorial(f):
+    if f == 1:
+      return 1
+    else:
+      return f * recursionFactorial(f-1)
+
+ print(recursionFactorial(5))
+
+  a = 2
+
+  def scope():
+    print(a)
+
+scope()
+functions(myList)
+recursionFactorial(f)
