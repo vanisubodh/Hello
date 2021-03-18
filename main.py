@@ -1,9 +1,19 @@
-def slices():
+def multipleReturn():
 
-  pizzas = ["Hawai","Pepperoni","Fromaggi","Napolitana","Diavoli"]
-  print(pizzas[2:4])
+  def multiReturn():
+    a = 3
+    b = 4
+    return a, b, a+b
 
-  text = "Hello World"
+  print(multiReturn())
 
-  print(text[6:])
-slices()
+  def return5vars():
+    c = 1
+    d = 2
+    e = 3
+    f = 4
+    g = 5
+    return c, d, e, f, g
+
+  print(return5vars())
+multipleReturn()
