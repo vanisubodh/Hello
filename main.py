@@ -1,12 +1,7 @@
-def scopeAlso():
 
-  x = 100
+import datetime
+def timeAndDate():
 
-  def reduce(x):
-    global y
-    y = x - 50
-
-  reduce(x)
-
-  print(y)
-scopeAlso()
+  dateToday = datetime.datetime.now()
+  print("Today is %d-%d-%d" % (dateToday.year, dateToday.month, dateToday.day))
+timeAndDate()
