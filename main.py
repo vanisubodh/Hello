@@ -1,13 +1,27 @@
-def lists():
-  states = ["Alaska", "Alabama", "Arkansas", "American Samoa", "Arizona", "California", "Colorado", "Connecticut", "District ", "of Columbia", "Delaware", "Florida", "Georgia", "Guam", "Hawaii", "Iowa", "Idaho", "Illinois", "Indiana", "Kansas", "Kentucky", "Louisiana", "Massachusetts", "Maryland", "Maine", "Michigan", "Minnesota", "Missouri", "Mississippi", "Montana", "North Carolina", "North Dakota", "Nebraska", "New Hampshire", "New Jersey", "New Mexico", "Nevada", "New York", "Ohio", "Oklahoma", "Oregon", "Pennsylvania", "Puerto Rico", "Rhode Island", "South Carolina", "South Dakota", "Tennessee", "Texas", "Utah", "Virginia", "Virgin Islands", "Vermont", "Washington", "Wisconsin", "West Virginia", "Wyoming"]
+def listOperations():
 
-  for state in states:
-    print(state, end=' ')
+  y = [6, 4, 2]
 
-  print("\n")
+  y.append(12)
+  y.append(8)
+  y.append(4)
 
-  for state in states:
-    if state[0] == 'M':
-      print(state)
-    else:
-      continue
+  y[1] = 3
+
+  print(y)
+
+'''
+Sorting list
+1. Given a list with pairs, sort on the first element
+x = [ (3,6),(4,7),(5,9),(8,4),(3,1)]
+2. Now sort on the second element
+'''
+
+def sortingList():
+  x = [(3,6),(4,7),(5,9),(8,4),(3,1)]
+  x.sort()
+  print(x)
+
+  x.sort(key = lambda x: x[1])
+  print(x)
+listOperations
