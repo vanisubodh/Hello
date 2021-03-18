@@ -1,27 +1,31 @@
-def listOperations():
+def rangeFunction():
 
-  y = [6, 4, 2]
+  thousand = range(1, 1000)
 
-  y.append(12)
-  y.append(8)
-  y.append(4)
+  min = 1000
+  max = 0
 
-  y[1] = 3
+  for element in thousand:
+    if element < min:
+      min = element
+      continue
+    elif element > max:
+      max = element
+      continue
 
-  print(y)
+  print("max: %d" % (max))
+  print("min: %d" % (min))
+  
+  even = []
+  odd = []
 
-'''
-Sorting list
-1. Given a list with pairs, sort on the first element
-x = [ (3,6),(4,7),(5,9),(8,4),(3,1)]
-2. Now sort on the second element
-'''
+  for element in range(0, 11, 2):
+    even.append(element)
 
-def sortingList():
-  x = [(3,6),(4,7),(5,9),(8,4),(3,1)]
-  x.sort()
-  print(x)
+  for element in range(1, 11, 2):
+    odd.append(element)
 
-  x.sort(key = lambda x: x[1])
-  print(x)
-listOperations
+  print(even)
+  print(odd)
+
+rangeFunction()
