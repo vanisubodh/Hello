@@ -1,22 +1,29 @@
-class cat:
 
-  def __init__(self, breed):
-    self.breed = breed
-    self.age = 1
-
-  def location():
-    x, y = 50
-    return x, y
-
-  def getAge():
-    return age
-  def setAge(self, age):
-    self.age = age
+import math
+def modules():
+  print(math.sin(90))
+  newModule.snake()
 
 
+  #1. Import the math module and call the sin function
+#2. Create your own module with the function snake()
 
-#'''
-#Getter and setter
-#1. Add a variable age and create a getter and setter (added #this to the class above since it made the most sense)
-#2. Why would you use getter and setter methods? Controlled #access, with getters and setters, you can control how others #access variables in classes
-#'''
+class App(object):
+  def start(self):
+    print('Starting')
+
+class DisApp(object):
+  def start(self):
+    print("Starting")
+
+class Apple(App):
+  def getVersion(self):
+    print('Apple version')
+
+class Linux(App, DisApp):
+  def getLinuxVersion(self):
+    print('Linux version')
+
+    #Inheritance
+#1. Create a new class that inherits from the class App
+#2. Try to create a class that inherits from two super classes (multiple inheritance)
